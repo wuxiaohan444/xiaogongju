@@ -1,0 +1,102 @@
+@import "base";
+@import "adapter";
+
+@num: 50;
+
+.container {
+  width: 100%;
+  position: relative;
+  background-color: @assistant;
+
+  .searchBox {
+    height: 290px;
+    position: relative;
+
+    .searchLogo {
+      width: 225px;
+      height: 225px;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%);
+
+      ::before {
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+      .over{
+        overflow: hidden;
+        width: 70px;
+        height: 30px;
+        z-index: 2;
+        position: absolute;
+        top: 43%;
+        left: 34%;
+      }
+      .bg {
+        position: absolute;
+        width: 140px;
+        height: 30px;
+        background:url("../images/xiam_@3x.png") repeat-x;
+        background-size: 70px 30px;
+        transform: translate(-50%);
+        animation: myfirst 0.9s infinite linear;
+        @keyframes myfirst {
+          0% {
+            left: 0%;
+          }
+          95% {
+            left: 100%;
+          }
+        }
+        img {
+          background-repeat: repeat-x;
+          background-position: left center;
+          background-size: auto 30px;
+          width: 84px;
+          height: 30px;
+          margin-left: 2px;
+          display: inline-block;
+          vertical-align: middle;
+          -webkit-animation: bg 180s infinite linear;
+        }
+      }
+
+      .search {
+        width: 95px;
+        height: 95px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%);
+      }
+    }
+  }
+
+  .txt {
+    text-align: center;
+    color: #fff;
+    margin-top: 20rem/@num;
+    font-size: 40rem/@num;
+    font-weight: 700;
+  }
+
+  .footer {
+    width: 92%;
+    max-width: 750px;
+    background-color: #ef7b90;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    padding: 30rem/@num;
+    font-size: 24rem/@num;
+
+    p {
+      line-height: 50rem/@num;
+    }
+  }
+}
+

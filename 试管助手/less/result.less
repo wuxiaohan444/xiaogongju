@@ -1,0 +1,510 @@
+@import "base";
+@import "adapter";
+
+.resultBox {
+  width: 92%;
+  position: relative;
+  padding: 30rem/@num;
+  background-color: @assistant;
+  color: #fff;
+
+  .resultLogo {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%);
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0);
+
+    img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .txt {
+      width: 70%;
+      height: 70%;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      background-color: @assistant;
+      transform: translate(-50%);
+      text-align: center;
+
+      .num {
+        font-size: 30px;
+        margin-top: 30px;
+
+        span {
+          font-size: 20px;
+        }
+      }
+
+      .cgl {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .again {
+    width: 160rem/@num;
+    height: 70rem/@num;
+    border: 2px solid #fff;
+    border-radius: 50rem/@num;
+    font-size: 27rem/@num;
+    position: absolute;
+    top: 10px;
+    right: 30rem/@num;
+    text-align: center;
+    line-height: 70rem/@num;
+
+    a {
+      color: #fff;
+    }
+
+    img {
+      width: 40rem/@num;
+      height: 40rem/@num;
+      vertical-align: middle;
+    }
+  }
+
+  .info {
+    display: flex;
+
+    img {
+      width: 35rem/@num;
+      height: 35rem/@num;
+      vertical-align: bottom;
+    }
+
+    :last-child {
+      border-right: none;
+    }
+
+    div {
+      flex: 1;
+      text-align: center;
+      border-right: 2px solid #fff;
+      font-size: 30rem/@num;
+      margin-top: 250px;
+    }
+  }
+}
+
+.resultCon {
+  width: 100%;
+  background-color: #F1F5F7;
+  box-sizing: border-box;
+  color: #666666;
+
+  .tab {
+    width: 100%;
+    height: 80rem/@num;
+    background-color: #fff;
+    box-sizing: border-box;
+    line-height: 80rem/@num;
+
+    li {
+      width: 33.33%;
+      float: left;
+      font-size: 26rem/@num;
+      text-align: center;
+      color: #333;
+    }
+
+    .now {
+      color: @assistant;
+      border-bottom: 2px solid @assistant;
+      padding-bottom: 22rem/@num;
+    }
+  }
+
+  .procedure {
+    border-left: 1px solid #DFDFDF;
+    margin: 20rem/@num;
+    padding: 10rem/@num 0  10rem/@num 20rem/@num;
+
+    .procedureBox {
+      background-color: #fff;
+      padding: 10px;
+      margin-bottom: 10px;
+      position: relative;
+      border-radius: 10rem/@num;
+
+      .lv {
+        color: @fsOne;
+      }
+
+      .huang {
+        color: @fsTwo;
+      }
+
+      .fen {
+        color: @assistant;
+      }
+
+      .lan {
+        color: @fsThree;
+      }
+
+      > ::after {
+        content: "";
+        border: 1px solid #fff;
+        width: 20rem/@num;
+        height: 20rem/@num;
+        border-radius: 50%;
+        position: absolute;
+        top: 15rem/@num;
+        left: -32rem/@num;
+        background-color: @assistant;
+      }
+
+      o {
+        position: absolute;
+        right: 20px;
+
+        img {
+          width: 30rem/@num;
+          height: 14rem/@num;
+          transform: rotate(180deg);
+        }
+
+        img.now {
+          width: 30rem/@num;
+          height: 14rem/@num;
+          transform: rotate(0deg);
+        }
+      }
+
+      img {
+        width: 34rem/@num;
+        height: 34rem/@num;
+        vertical-align: bottom;
+      }
+      p {
+        font-size: 28rem/@num;
+        margin-bottom: 5px;
+
+      }
+
+      .txt {
+        border-top: 1px solid #DFDFDF;
+        padding-top: 10px;
+
+        .oneLine {
+          display: block;
+
+          p {
+            font-size: 22rem/@num;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #333;
+            margin-bottom: 30rem/@num;
+          }
+        }
+
+        .complete {
+          display: none;
+
+          p {
+            font-size: 22rem/@num;
+            color: #333;
+            margin-bottom: 30rem/@num;
+          }
+        }
+
+      }
+    }
+
+  }
+
+  .rate {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    padding: 40rem/@num 10px;
+
+    .pic {
+      position: relative;
+
+      div {
+        position: absolute;
+        text-align: center;
+        font-size: 26rem/@num;
+      }
+
+      .one {
+        left: 11.33%;
+        top: 131rem/@num;
+
+        span {
+          width: 100rem/@num;
+          height: 100rem/@num;
+          display: block;
+          background-color: #f993a6;
+        }
+      }
+      .two {
+        left: 44.66%;
+        top: 81rem/@num;
+
+        span {
+          width: 100rem/@num;
+          height: 150rem/@num;
+          display: block;
+          background-color: #ec788e;
+        }
+      }
+      .three {
+        left: 77.99%;
+        top: 31rem/@num;
+
+        span {
+          width: 100rem/@num;
+          height: 200rem/@num;
+          display: block;
+          background-color: #ee5b77;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 272rem/@num;
+      }
+
+    }
+
+    .txt {
+      background-color: #fff;
+      display: flex;
+
+      p {
+        flex: 1;
+        text-align: center;
+        font-size: 40rem/@num;
+        color: #999;
+        font-weight: 700;
+      }
+    }
+    .sart {
+      font-size: 28rem/@num;
+      text-align: center;
+      margin-top: 10px;
+      color: #999;
+      font-weight: 700;
+    }
+  }
+
+  .cost {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+
+    .top {
+      width: 100%;
+      background-color: @fsTwo;
+      padding: 60rem/@num 20rem/@num 20rem/@num 20rem/@num;
+      box-sizing: border-box;
+      position: relative;
+      p {
+        font-size: 24rem/@num;
+        text-align: center;
+      }
+      .title {
+        color: @assistant;
+        text-align: center;
+        font-size: 24rem/@num;
+      }
+
+      .price {
+        color: @assistant;
+        text-align: center;
+        font-size: 24rem/@num;
+        font-weight: 700;
+        margin-top: 20rem/@num;
+        margin-bottom: 30rem/@num;
+      }
+
+      .txt {
+        font-size: 18rem/@num;
+        text-align: left;
+        color: #c6c6c6;
+      }
+
+      .help {
+        display: block;
+        font-size: 26rem/@num;
+        position: absolute;
+        right: 25px;
+        top: 15px;
+        width: 30rem/@num;
+        height: 30rem/@num;
+        border: 2rem/@num solid @assistant;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30rem/@num;
+        color: @assistant;
+      }
+    }
+
+    .fixed{
+      width: 100%;
+      height: 80rem/@num;
+      position: fixed;
+      top: 80rem/@num;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      font-size: 30rem/@num;
+      color: @assistant;
+      background-color: #fff;
+      line-height: 80rem/@num;
+      z-index: 9;
+
+      img{
+        width: 34rem/@num;
+        height: 34rem/@num;
+        vertical-align: middle;
+        margin-right: 10rem/@num;
+      }
+    }
+
+
+    .info {
+
+      .infoTitle {
+        padding: 0 20rem/@num;
+        height: 100rem/@num;
+        background-color: @assistant;
+        color: #fff;
+        line-height: 100rem/@num;
+        font-size: 38rem/@num;
+        font-weight: 700;
+
+        img {
+          width: 38rem/@num;
+          height: 38rem/@num;
+          margin-right: 10rem/@num;
+        }
+      }
+
+      .content {
+        margin: 30rem/@num;
+        border: 2rem/@num solid #c6c6c6;
+        font-size: 30rem/@num;
+        padding: 10rem/@num;
+
+        .title {
+          color: #000;
+          border-bottom: 1px solid #c6c6c6;
+          padding: 10rem/@num 0 20rem/@num 0;
+        }
+
+        .photo {
+          width: 30rem/@num;
+          height: 30rem/@num;
+          background: url("../images/weixuanzezhuangtai_@3x.png") no-repeat;
+          background-size: 30rem/@num 30rem/@num;
+          float: left;
+          margin-top: 15rem/@num;
+        }
+        .photo2 {
+          width: 30rem/@num;
+          height: 30rem/@num;
+          background: url("../images/weixuanzezhuangtai_@3x.png") no-repeat;
+          background-size: 30rem/@num 30rem/@num;
+          float: left;
+          margin-top: 15rem/@num;
+        }
+        .photo.icon {
+          background: url("../images/xuanzezhuangtai_.png") no-repeat;
+          background-size: 30rem/@num 30rem/@num;
+        }
+        .photo2.icon {
+          background: url("../images/xuanzezhuangtai_.png") no-repeat;
+          background-size: 30rem/@num 30rem/@num;
+        }
+
+        .price {
+          color: @assistant;
+          float: right;
+          font-size: 26rem/@num;
+        }
+
+        .titleInfo {
+          margin: 20rem/@num 0;
+          font-size: 26rem/@num;
+        }
+      }
+    }
+  }
+
+  .fa {
+    font-size: 26rem/@num;
+    margin-top: 10px;
+    margin-bottom: 34rem/@num;
+
+    .select {
+      width: 42%;
+      display: inline-block;
+
+      > img {
+        width: 30rem/@num;
+        height: 14rem/@num;
+        transform: rotate(180deg);
+        vertical-align: middle;
+        float: right;
+      }
+    }
+  }
+  .help {
+    position: absolute;
+    right: 28px;
+    top: -10rem/@num;
+    width: 45rem/@num;
+    height: 45rem/@num;
+    border-radius: 50%;
+    border: 2rem/@num solid @assistant;
+    text-align: center;
+    line-height: 45rem/@num;
+    color: @assistant;
+    font-size: 34rem/@num;
+  }
+
+  .question {
+    width: 640rem/@num;
+    height: 200rem/@num;
+    position: absolute;
+    z-index: 2;
+    right: 25px;
+    top: 55rem/@num;
+    box-sizing: border-box;
+
+    img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    p {
+      padding: 50rem/@num;
+      position: absolute;
+      color: #fff;
+      font-size: 24rem/@num;
+      font-weight: 700;
+    }
+  }
+
+}

@@ -1,0 +1,69 @@
+@import "base";
+@import "adapter";
+@num:50;
+
+.container{
+  padding: 30rem/@num 30rem/@num;
+  position: relative;
+  color: #999;
+
+  .skip{
+    width: 80rem/@num;
+    height :80rem/@num;
+    background-color: @assistant;
+    border-radius: 50%;
+    font-size: 28rem/@num;
+    text-align: center;
+    line-height: 80rem/@num;
+    float: right;
+
+    a{
+      color: #fff;
+    }
+  }
+
+  input{
+    border: 1px solid #999;
+    font-size: 26rem/@num;
+    text-indent: 1em;
+  }
+
+  .number{
+    margin-top: 60rem/@num;
+
+    p{
+      font-size: 26rem/@num;
+    }
+
+    input{
+      width: 100%;
+      height: 60rem/@num;
+
+    }
+  }
+
+  .code{
+    display: flex;
+    margin-top: 30rem/@num;
+
+    input{
+      height: 60rem/@num;
+      flex: 1;
+    }
+
+    button{
+      flex: 1;
+      //width: 240rem/@num;
+      height: 60rem/@num;
+      margin-left: 88rem/@num;
+      background-color: #c6c6c6;
+      color: #fff;
+      font-size: 24rem/@num;
+      border-radius: 10rem/@num;
+    }
+  }
+
+  .next{
+    width:92%;
+  }
+}

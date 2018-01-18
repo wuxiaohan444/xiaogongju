@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/problemFour.css">
+</head>
+<body>
+<div class="container">
+    <div class="item one">
+        <div class="title">您所在城市</div>
+        <span class="select"><span class="province">请选择</span><span class="town"></span><img src="images/xiala_@3x.png" alt=""></span>
+        <div class="mod hide">
+            <div class="city">
+                <div id="box">
+                    <ul class="left">
+
+                    </ul>
+                </div>
+                <ul class="right">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="item two">
+        <div class="title">您是否有意愿尝试试管婴儿助孕？</div>
+        <span class="select"><span class="text">请选择</span><img src="images/xiala_@3x.png" alt=""></span>
+        <div class="mod hide">
+            <div class="all">
+                <ul>
+                    <li>有意愿</li>
+                    <li>没意愿</li>
+                    <li>考虑中</li>
+                </ul>
+                <div class="no">
+                    <span>取消</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item three">
+        <div class="title">您希望进行试管婴儿的城市？</div>
+        <span class="select"><span class="text">请选择</span><img src="images/xiala_@3x.png" alt=""></span>
+        <div class="mod hide">
+            <div class="all">
+                <ul>
+                    <li>省内</li>
+                    <li>国内</li>
+                    <li>海外</li>
+                </ul>
+                <div class="no">
+                    <span>取消</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item four">
+        <div class="title">您的试管婴儿预算？</div>
+        <p class="tips">
+            (试管单次成功率有限，可能需要多次尝试，费用较难控制）
+        </p>
+        <span class="select"><span class="text">请选择</span><img src="images/xiala_@3x.png" alt=""></span>
+        <div class="mod hide">
+            <div class="all">
+                <ul>
+                    <li>五万以下</li>
+                    <li>十万以下</li>
+                    <li>二十万以下</li>
+                    <li>三十万以下</li>
+                    <li>只要能怀上，钱不是问题</li>
+                </ul>
+                <div class="no">
+                    <span>取消</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="problemFive.html" class="next">下一步</a>
+</div>
+<script type="text/html" id="tpl">
+    <%for( i = 0; i < data.length; i++) {%>
+    <li>{{data[i].name}}</li>
+    <%}%>
+</script>
+<script type="text/html" id="tpl2">
+    <%for( i = 0; i < data.city.length; i++) {%>
+    <li>{{data.city[i].name}}</li>
+    <%}%>
+</script>
+<script src="lib/template-web.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/problemFour.js"></script>
+</body>
+</html>

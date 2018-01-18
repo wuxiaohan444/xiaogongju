@@ -1,0 +1,45 @@
+@import "base";
+@import "adapter";
+@num:50;
+
+.container{
+  padding: 30rem/@num 30rem/@num;
+  color: #333;
+  position: relative;
+
+  .title{
+    font-size: 30rem/@num;
+  }
+
+  .problem{
+    height: 90%;
+    width: 100%;
+    max-width: 750px;
+
+    .item:first-child{
+      margin-right: 50rem/@num;
+    }
+
+    .item{
+      float: left;
+      width: 46%;
+    }
+
+    span{
+      text-align: center;
+      line-height: 70rem/@num;
+      display: block;
+      border: 1px solid #999;
+      border-radius: 10rem/@num;
+      height: 70rem/@num;
+      font-size: 30rem/@num;
+      margin-top: 30rem/@num;
+    }
+
+    span.now{
+      background-color: @assistant;
+      color: #fff;
+      border: 1px solid @assistant;
+    }
+  }
+}
